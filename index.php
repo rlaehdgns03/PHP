@@ -12,7 +12,7 @@
 <body id="target">
     <header>
             <h1><a href="http://localhost/index.php">JavaScript</a></h1>
-            <img src="생코.png">
+            <img src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/course/94.png" alt="생활코딩">
     </header>
     <nav>
         <ol>
