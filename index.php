@@ -1,3 +1,8 @@
+<?php
+    $conn=mysqli_connect("localhost", "root", "adsdads1");
+    mysqli_select_db($conn, "opentutorials");
+    $result=mysqli_query($conn, "SELECT * FROM topic");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +12,14 @@
 <body id="target">
     <header>
             <h1><a href="http://localhost/index.php">JavaScript</a></h1>
+            <img src="생코.png">
     </header>
     <nav>
         <ol>
             <?php
-               echo file_get_contents("list.txt");
+                while($row=mysqli_fetch_assoc($result)){
+                    echo '<li><a href="http://localhost/index.php?id='.$row['id'].'">'.$row['title'].'</a></li>'."\n";
+                }
             ?>
         </ol>  
     </nav>
@@ -21,9 +29,13 @@
     </div>
     <article>
          <?php
-               if(empty($_GET['id']) == false){
-                    echo file_get_contents($_GET['id'].".txt");
-               }
+            if(empty($_GET['id'])===false){
+                $sql="SELECT * FROM topic WHERE id =".$_GET['id'];
+                $result=mysqli_query($conn, $sql);
+                $row=mysqli_fetch_assoc($result);
+                echo '<h2>'.$row['title'].'</h2>';
+                echo $row['description'];
+            }
          ?>
     </article>
 </body>
