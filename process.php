@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", 111111);
+$conn = mysqli_connect("localhost", "root", "adsdads1");
 mysqli_select_db($conn, "opentutorials");
 $sql = "SELECT * FROM user WHERE name='".$_POST['author']."'";
 $result  = mysqli_query($conn, $sql);

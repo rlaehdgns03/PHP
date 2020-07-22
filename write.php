@@ -29,7 +29,7 @@
         <a href="http://localhost/write.php">쓰기</a>
     </div>
     <article>
-         <form action="process.php"method="post">
+         <form action="process.php" method="post">
               <p>
                    제목: <input type="text" name="title">
               </p>
