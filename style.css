@@ -11,3 +11,11 @@ body.black{
 #logo{
      width:100px;
 }
+
+.container{
+  padding-top:20px;
+}
+
+#control{
+  margin-bottom:40px;
+}
