@@ -7,8 +7,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <meta charset="utf-8">
-     <link rel="stylesheet" type="text/css" href="http://localhost/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://localhost/style.css">
+    <link href="http://localhost/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body id="target">
     <header>
@@ -43,5 +46,7 @@
               <input type="submit" name="name">
          </form>
     </article>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://localhost/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
