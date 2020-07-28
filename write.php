@@ -18,8 +18,8 @@ $result = mysqli_query($conn, "SELECT * FROM topic");
   <div class="container">
  
     <header class="jumbotron text-center">
-      <img src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/course/94.png" alt="생활코딩" class="img-circle" id="logo">
-      <h1><a href="http://localhost/index.php">JavaScript</a></h1>
+      <img src="https://previews.123rf.com/images/jovanas/jovanas1703/jovanas170300383/73495907-%ED%95%99%EA%B5%90-%EA%B2%8C%EC%8B%9C%ED%8C%90-%EC%95%84%EC%9D%B4%EC%BD%98.jpg" alt="생활코딩" class="img-circle" id="logo">
+      <h1><a href="http://localhost/index.php">게시판</a></h1>
     </header>
 
     <div class="row">
